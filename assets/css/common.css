@@ -18,9 +18,9 @@ body.noScroll {overflow: hidden; height: 100%;}
 .loading {display: flex; align-items: center; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto; width: 80px; height: 80px; animation: turn .9s ease-in-out infinite;}
 .loading > div {width: 20px; height: 20px; background: #fff; border-radius: 50%;}
 .loading > div:last-child {margin-left: 40px; display: none;}
-.loading.b {animation-delay: .1s;}
+.loading.b {animation: turn .9s .1s ease-in-out infinite;}
 .loading.b > div {width: 15px; height: 15px;}
-.loading.c {animation-delay: .2s;}
+.loading.c {animation: turn .9s .2s ease-in-out infinite;}
 .loading.c > div {width: 10px; height: 10px;}
 @keyframes turn {
     0% {transform: rotate(0); opacity: 0;}
