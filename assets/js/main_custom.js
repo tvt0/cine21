@@ -1,4 +1,10 @@
 (function ($) {
+    // loading
+    $(window).load(function () {
+        $("#loading").hide();
+        $("body").removeClass("noScroll");
+    });
+    
     // top btn
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {

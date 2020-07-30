@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
 
 /* skip nav */
 #skip {position: relative; z-index: 10000;}
@@ -10,71 +12,11 @@
 .quick-area a {overflow: hidden; position: fixed; right: -100px; bottom: 25px; width: 50px; height: 50px; background-position: 0 0; z-index: 10; transition: all .5s ease;}
 
 /* layout */
-#header {position: fixed; left: 0; top: 0; width: 100%; height: 64px; z-index: 10000; background-color: #000;}
 #main_slide {}
 #news {}
 #interview {background: #000;}
 #review {}
 #info {}
-#footer {background: #000; padding: 70px 0;}
-
-/* container */
-.container {position: relative; width: 1280px; margin: 0 auto;}
-
-/* row */
-.row {padding: 0 28px;}
-
-/* mNav */
-.ham {display: none; position: absolute; right: 25px; top: 23px; width: 26px; height: 26px;}
-.ham div {width: 100%; height: 100%;}
-.ham span {display: block; background: #fff; width: 25px; height: 2px; border-radius: 3px; transition: 0.2s margin 0.2s, 0.2s transform;}
-.ham span:nth-child(1) {margin-bottom: 6px;}
-.ham span:nth-child(3) {margin-top: 6px;}
-.ham.active span {transition: 0.2s margin, 0.2s transform 0.2s;}
-.ham.active span:nth-child(1) {margin-top: 8px; margin-bottom: -2px; transform: rotate(45deg);}
-.ham.active span:nth-child(2) {transform: rotate(45deg);}
-.ham.active span:nth-child(3) {margin-top: -2px; transform: rotate(135deg);}
-
-/* side-menu */
-.side-menu {position: fixed; right: -100%; top: 64px; width: 100%; height: 100vh; background: #000; z-index: 1; overflow: scroll;
- -ms-overflow-style: none; /* IE and Edge */ overflow-x: hidden;}
-.side-menu::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
-.side-menu .menu {padding: 0 24px;}
-.side-menu .menu.on {height: 145%;}
-.side-menu li a {text-transform: uppercase; padding: 12px 0; display: block; font-size: 20px;}
-.side-menu li.search {position: relative; border-bottom: 1px solid #fff; height: 40px; margin: 12px 0; font-size: 18px; padding-left: 35px; padding-bottom: 6px; line-height: 40px;}
-.side-menu li.search a {padding: 0;}
-.side-menu li.search span {position: absolute; left: 0; top: 9px; background-position: 0 -89px; width: 20px; height: 20px; display: block;}
-.side-menu li.search input {background: #000; color: #8b8b8b; border: 0; font-size: 18px;}
-.side-menu li.lg {display: inline-block; background: #fff; margin: 12px 12px 12px 0; border-radius: 50px;}
-.side-menu li.lg a {font-size: 15px; color: #000; font-weight: 600; padding: 6px 16px 8px 16px;}
-.side-menu li.article {position: relative;}
-.side-menu li.article .btn {display: block; position: absolute; right: 10px; top: 14px; background-size: 95px; width: 15px; height: 24px; background-position: -80px 0; transform: rotate(90deg);}
-.side-menu li.article .btn.on {transform: rotate(-90deg); top: 16px;}
-.side-menu li.article .article-nav {display: none;}
-.side-menu li.article .article-nav a {color: #8b8b8b; font-size: 15px;}
-.side-menu .sns {border-top: 1px solid #fff; margin-top: 12px; padding-top: 12px;}
-.side-menu .sns li {display: inline-block; margin-right: 12px; vertical-align: middle;}
-.side-menu .sns li a {width: 38px; height: 38px; padding: 0;}
-.side-menu .sns li.s1 {background-position: 0 -113px;}
-.side-menu .sns li.s2 {background-position: -39px -113px;}
-.side-menu .sns li.s3 {background-position: -78px -113px;}
-.side-menu .sns li.s4 {background-position: -117px -113px;}
-
-/* header */
-.header h1 {float: left; padding: 22px 30px 0 0;}
-.header h1 img {width: 100px;}
-.header .nav_left {float: left;}
-.header .nav_left li {position: relative; float: left; padding: 21px 17px;}
-.header .nav_left li a {font-size: 15px; text-transform: uppercase; transition: all .3s ease;}
-.header .nav_left li::before {content: ''; position: absolute; left: 0; top: 26px; width: 2px; height: 12px; background: rgba(255,255,255,.3);}
-.header .nav_left li:hover a {color: #c6c6c6;}
-.header .nav_right {float: right;}
-.header .nav_right li {float: left; padding: 21px 17px;}
-.header .nav_right li:last-child {padding-right: 20px;}
-.header .nav_right li a {font-size: 15px; text-transform: uppercase; color: #C6C6C6;}
-.header .nav_right .search {position: absolute; right: 28px; top: 22px;}
-.header .nav_right .search span {background-position: 0 -89px; width: 20px; height: 20px; display: block;}
 
 /* main_slide */
 .sliders {width: 100%; box-sizing: border-box;}
@@ -199,27 +141,6 @@ border-bottom: 1px solid #fff; padding-bottom: 10px;}
 .notice li span {position: absolute; right: 0; top: 0; color: #8b8b8b; font-weight: 300;}
 .notice .more span {position: absolute; right: 0; top: 26px; width: 20px; height: 20px; background-size: 300px; background-position: -27px -107px;}
 
-/* footer */
-.footer_sns {position: absolute; right: 28px; top: -5px; z-index: 1;}
-.footer_sns li {display: inline-block; margin-left: 10px; vertical-align: middle;}
-.footer_sns li a {display: block; width: 38px; height: 38px;}
-.footer_sns li.s1 {background-position: 0 -113px; margin-left: 0;}
-.footer_sns li.s2 {background-position: -39px -113px;}
-.footer_sns li.s3 {background-position: -78px -113px;}
-.footer_sns li.s4 {background-position: -117px -113px;}
-.footer_info {font-size: 14px;}
-.footer_info li {position: relative; display: inline-block; margin-right: 20px;}
-.footer_info li::before {content: ''; position: absolute; left: -12px; top: 6px; width: 1px; height: 12px; background: #8b8b8b;}
-.footer_info li:first-child::before {display: none;}
-.footer_info p {font-weight: 300; color: #c6c6c6; margin-top: 24px;}
-.footer_info p em {display: block;}
-.footer_info p span {margin-left: 12px;}
-.footer_info p:last-child {font-weight: 400;}
-
-
-
-
-
 /* trailer */
 .overlay {background: rgba(0,0,0,.9); display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 10000;}
 .modal {position: absolute;}
@@ -244,7 +165,6 @@ body.modal_on {overflow: hidden;}
     .review .review_cont > div figure {width: 600px; height: 337px;}
     
     .magazine img {width: 178px; margin-top: 40px;}
-    
 }
 
 @media (max-width: 1024px){
