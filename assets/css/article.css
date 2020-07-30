@@ -33,19 +33,14 @@
 
 /* 미디어 쿼리 */
 @media (max-width: 1290px){
-    .container {width: 100%;}  
+    
 }
 
 @media (max-width: 1024px){
     
 }
 
-@media (max-width: 960px){
-    .row {padding: 0 24px;}
-    .ham {display: block;}
-    .header .nav_left,
-    .header .nav_right {display: none;}
-    
+@media (max-width: 960px){ 
     #contents {padding: 65px 0;}
     .title {display: none;}
     .cont {border: 0;}
@@ -58,42 +53,22 @@
     .cont ul li:hover .info {transform: translateY(115px);}
     .cont ul li .info h3 {color: #fff; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; height: calc(1em*1.5*2); white-space: normal; word-break: keep-all;}
     .nav .page {margin-top: 0;}
-    
-    .footer_sns {top: -6px;}
-    .footer_sns li {display: block; margin-left: 0; margin-bottom: 10px;}
 }
 
 @media (max-width: 768px){
-    #footer {padding-top: 0; padding-bottom: 35px;}
-    .footer_sns {position: static; text-align: center; background: #fff; padding: 8px 0;}
-    .footer_sns li {display: inline-block; margin-left: 15px; margin-bottom: 0;}
-    .footer_sns li.s1 {background-position: 0 -152px;}
-    .footer_sns li.s2 {background-position: -39px -152px;}
-    .footer_sns li.s3 {background-position: -78px -152px;}
-    .footer_sns li.s4 {background-position: -117px -152px;}
-    .footer_sns p {display: none;}
-    .footer_info {margin-top: 35px; text-align: center; width: 100%;}
+
 }
 
 @media (max-width: 600px){
-    .row {padding: 0 16px;}
-    .ham {right: 18px;}
-    .side-menu .menu {padding: 0 16px;}
-    
     .cont ul li {height: 160px;}
     .cont ul li .thumbnail {background-size: 285px;}
     .cont ul li .info {padding: 16px; height: 160px; transform: translateY(85px);}
     .cont ul li:hover .info {transform: translateY(85px);}
     .cont ul li .info h3 {font-size: 14px; margin-bottom: 16px;}
-    
-    .footer_info {font-size: 12px;}
-    .footer_info li {display: none;}
-    .footer_info p span:last-child {display: block;}
 }
 
 @media (max-width: 480px){
     #contents .row {padding: 0 8px;}
-    
     #contents {padding: 40px 0;}
     .cont {padding-bottom: 16px;}
     .cont ul li {height: 120px;}
@@ -104,6 +79,5 @@
 }
 
 @media (max-width: 320px){
-    .side-menu .menu {height: 105%;}
-    .side-menu .menu.on {height: 162%;}
+
 }

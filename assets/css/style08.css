@@ -158,7 +158,6 @@ body.modal_on {overflow: hidden;}
 
 /* 미디어 쿼리 */
 @media (max-width: 1290px){
-    .container {width: 100%;}
     .sliders .swiper-slide .text {left: 100px;}
     
     .review .review_cont > div {height: 337px;}
@@ -177,16 +176,10 @@ body.modal_on {overflow: hidden;}
     
     .review .review_cont > div {height: 303px;}
     .review .review_cont > div figure {width: 540px; height: 303px;}
-    .review .review_cont > div .copy p {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.5; height: calc(1em*1.5*2);}
-    
+    .review .review_cont > div .copy p {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.5; height: calc(1em*1.5*2);} 
 }
 
 @media (max-width: 960px){
-    .row {padding: 0 24px;}
-    .ham {display: block;}
-    .header .nav_left,
-    .header .nav_right {display: none;}
-    
     .news h2 {font-size: 36px;}
     .news .card_news > div {width: 49%;}
     .news .card_news > div:nth-child(2n) {margin-right: 0;}
@@ -235,9 +228,6 @@ body.modal_on {overflow: hidden;}
     .magazine .btn a {font-size: 16px;}
     .notice {height: 330px;}
     .notice li {font-size: 16px; padding-bottom: 17px;}
-    
-    .footer_sns {top: -6px;}
-    .footer_sns li {display: block; margin-left: 0; margin-bottom: 10px;}
 }
 
 @media (max-width: 768px){
@@ -287,24 +277,9 @@ body.modal_on {overflow: hidden;}
     .magazine .btn a.pink {bottom: 70px;}
     .magazine .btn a.white {bottom: 24px;}
     .notice {padding: 24px; height: 320px;}
-    
-    #footer {padding-top: 0; padding-bottom: 35px;}
-    .footer_sns {position: static; text-align: center; background: #fff; padding: 8px 0;}
-    .footer_sns li {display: inline-block; margin-left: 15px; margin-bottom: 0;}
-    .footer_sns li.s1 {background-position: 0 -152px;}
-    .footer_sns li.s2 {background-position: -39px -152px;}
-    .footer_sns li.s3 {background-position: -78px -152px;}
-    .footer_sns li.s4 {background-position: -117px -152px;}
-    .footer_sns p {display: none;}
-    .footer_info {margin-top: 35px; text-align: center; width: 100%;}
-
 }
 
-@media (max-width: 600px){
-    .row {padding: 0 16px;}
-    .ham {right: 18px;}
-    .side-menu .menu {padding: 0 16px;}
-    
+@media (max-width: 600px){   
     .sliders .swiper-slide .text {left: 32px; bottom: 70px;}
     .sliders .swiper-slide h3 {font-size: 28px;}
     .sliders .swiper-button-prev,
@@ -334,10 +309,6 @@ body.modal_on {overflow: hidden;}
     
     .info h2 {font-size: 28px;}
     .magazine img {width: 170px; margin-top: 30px;}
-    
-    .footer_info {font-size: 12px;}
-    .footer_info li {display: none;}
-    .footer_info p span:last-child {display: block;}
 }
 
 @media (max-width: 480px){
@@ -393,10 +364,7 @@ body.modal_on {overflow: hidden;}
     .notice .more span {top: 10px;}
 }
 
-@media (max-width: 320px){
-    .side-menu .menu {height: 105%;}
-    .side-menu .menu.on {height: 162%;}
-    
+@media (max-width: 320px){ 
     .news .card_news > div.card2 {transform: translateY(100px); opacity: 0;}
     .news .card_news > div.card2.show {transform: translateY(0); opacity: 1;}
     
