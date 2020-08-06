@@ -139,7 +139,8 @@ border-bottom: 1px solid #fff; padding-bottom: 10px;}
 .notice li {position: relative; padding: 0 120px 20px 16px; font-size: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .notice li::before {content: ''; position: absolute; left: 0; top: 12px; width: 3px; height: 3px; border-radius: 50%; background: #fff;}
 .notice li span {position: absolute; right: 0; top: 0; color: #8b8b8b; font-weight: 300;}
-.notice .more span {position: absolute; right: 0; top: 26px; width: 20px; height: 20px; background-size: 300px; background-position: -27px -107px;}
+.notice .more a {position: absolute; right: 0; top: 10px; width: 20px; height: 20px; padding: 10px;}
+.notice .more span {width: 20px; height: 20px; background-size: 300px; background-position: -27px -107px;}
 
 /* trailer */
 .overlay {background: rgba(0,0,0,.9); display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 10000;}
@@ -277,6 +278,7 @@ body.modal_on {overflow: hidden;}
     .magazine .btn a.pink {bottom: 70px;}
     .magazine .btn a.white {bottom: 24px;}
     .notice {padding: 24px; height: 320px;}
+    .notice .more a {top: 4px;}
 }
 
 @media (max-width: 600px){   
@@ -361,7 +363,7 @@ body.modal_on {overflow: hidden;}
     .notice {padding: 16px; height: 250px;}
     .notice li {font-size: 14px; padding-bottom: 12px; padding-right: 90px;}
     .notice li::before {top: 10px;}
-    .notice .more span {top: 10px;}
+    .notice .more a {top: 0;}
 }
 
 @media (max-width: 320px){ 
@@ -374,7 +376,6 @@ body.modal_on {overflow: hidden;}
     
     .magazine img {width: 105px; margin-top: 40px;}
 }
-
 
 
 

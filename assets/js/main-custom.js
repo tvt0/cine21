@@ -5,6 +5,7 @@
         $("body").removeClass("noScroll");
     });
     
+    
     // top btn
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -24,12 +25,13 @@
         }, 200);
     });
 
+    
     // mNav
     $(".mNav").click(function (e) {
         e.preventDefault();
-        $(".ham").toggleClass('active');
-        $(".side-menu").toggleClass('on');
-        if ($(".side-menu").hasClass('on')) {
+        $(".ham").toggleClass("active");
+        $(".side-menu").toggleClass("on");
+        if ($(".side-menu").hasClass("on")) {
             $(".side-menu").animate({
                 'right': '0'
             }, 300);
@@ -37,9 +39,23 @@
             $(".side-menu").animate({
                 'right': '-100%'
             }, 300);
+            $(".article-nav").removeAttr("style");
+            $("li.article .btn").removeClass("on");
+            $(".side-menu .menu").removeClass("on");
+        }
+    });
+    $(window).resize(function () {
+        var wWidth = $(window).width();
+        if (wWidth > 960) {
+            $(".ham").removeClass("active");
+            $(".side-menu").removeClass("on").removeAttr("style");
+            $(".article-nav").removeAttr("style");
+            $("li.article .btn").removeClass("on");
+            $(".side-menu .menu").removeClass("on");
         }
     });
 
+    
     // article nav
     $("li.article > a").click(function (e) {
         e.preventDefault();
@@ -48,6 +64,7 @@
         $(".side-menu .menu").toggleClass("on");
     });
 
+    
     // 메인 슬라이드
     var mySwiper = new Swiper('.swiper-container', {
         navigation: {
@@ -64,19 +81,21 @@
         },
     });
 
+    
     // news 패럴랙스 효과
     $(window).scroll(function () {
         const scrollTop = parseInt($(window).scrollTop() + $(window).height() / 2);
         const news = $(".card_news > div");
         for (let i = 0; i < news.length; i++) {
             if (scrollTop >= news.eq(i).offset().top - $(window).height() / 3) {
-                news.eq(i).addClass('show');
+                news.eq(i).addClass("show");
             } else {
-                news.eq(i).removeClass('show');
+                news.eq(i).removeClass("show");
             }
         }
     });
 
+    
     // 인터뷰 슬라이드
     $(".slider").slick({
         centerMode: true,
@@ -107,6 +126,7 @@
             ]
     });
 
+    
     // sns공유
     $(".icon.s3").click(function (e) {
         e.preventDefault();

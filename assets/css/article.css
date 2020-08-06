@@ -8,8 +8,8 @@
 /* title */
 .title {margin-bottom: 6px;}
 .title ul {width: 100%; text-align: center;}
-.title li {display: inline-block; padding: 16px 30px; box-sizing: border-box; margin-left: -4px; }
-.title li a {font-size: 16px; text-transform: uppercase; color: #8b8b8b;}
+.title li {display: inline-block; box-sizing: border-box; margin-left: -4px; }
+.title li a {display: block; font-size: 16px; text-transform: uppercase; color: #8b8b8b; padding: 16px 30px;}
 .title li.active a {color: #fff;}
 
 /* cont */
@@ -24,8 +24,8 @@
 
 /* nav */
 .nav .page {width: 100%; text-align: center; margin-top: 24px;}
-.nav .page li {display: inline-block; margin: 0 10px; font-size: 16px; color: #c6c6c6;}
-.nav .page li a {color: #c6c6c6;}
+.nav .page li {display: inline-block; font-size: 16px; color: #c6c6c6;}
+.nav .page li a {display: block; color: #c6c6c6; padding: 0 10px;}
 .nav .page li.active a {color: #fff;}
 .nav .page li.icon {background-size: 95px; width: 15px; height: 24px; background-position: -80px 0; vertical-align: middle; cursor: pointer;}
 
